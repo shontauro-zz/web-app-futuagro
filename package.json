@@ -16,9 +16,12 @@
     "format": "prettier --write \"**/*.+(js|jsx)\""
   },
   "lint-staged": {
-    "*.{js,jsx,json,yml,yaml,css}": [
-      "eslint 'src/**/*.+(js|jsx)' --fix",
-      "prettier-eslint src/**/*.+(js|jsx|json|yml|yaml|css)' --write",
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write",
       "git add"
     ]
   },
@@ -52,6 +55,7 @@
     "eslint-plugin-react-hooks": "^2.1.2",
     "husky": "^3.0.8",
     "lint-staged": "^9.4.2",
+    "node-sass": "^4.12.0",
     "prettier": "^1.18.2"
   }
 }
