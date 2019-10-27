@@ -1,3 +1,31 @@
-.login-form {
+.login-form-container {
   padding: 6.25rem 4.375rem;
+
+  .title {
+    display: block;
+    margin-top: 4rem;
+    text-align: left;
+    font-size: 2.25rem;
+    font-weight: normal;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 0;
+      width: 6.5rem;
+      height: 7px;
+      background-color: #fc9e4c;
+    }
+  }
+
+  .login-form {
+    margin-top: 11.625rem;
+  }
+  
+  .submit-btn {
+    margin: 1.75rem 0;
+    height: 2.2rem;
+  }
 }

@@ -8,7 +8,11 @@ import './Login.scss'
 const Login = () => (
   <Router>
     <div className="login">
-      <img className="login__cover" src="./images/background_big.png" />
+      <img
+        className="login__cover"
+        src="./images/background_big@2x.png"
+        alt="farmer"
+      />
       <Switch>
         <Route path="/" exact>
           <LoginForm />
